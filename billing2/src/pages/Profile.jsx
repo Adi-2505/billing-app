@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../Providers/AuthProvider";
 
-import {Button} from "@/conponents/ui/button.jsx"
+import {Button} from "@/components/ui/button.jsx"
 
 const About = () => {
   const { loading, isAuthenticated, user } = useAuth();
