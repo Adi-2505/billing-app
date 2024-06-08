@@ -98,25 +98,39 @@ This workflow will be triggered when user will generate invoice and the invoice 
 
 Now that the project setup has completed let's move on to the Application flow
 
-# Application Flow
+# Billing Application
 
-1. Google sign in
+## Project Overview
+This project utilizes Zapier to automate the billing and invoicing process. Users sign up and, based on their usage of the application's APIs, can generate invoices seamlessly.
 
-    User come to the landing page of the application. User have to sign in to the application using google account without that then cannot access the application
+## Application Flow
 
-2. After the sign in process users are redirected to the dashboard page from where you can make api calls. The more API calls you make your usage increases
-As your usage increases the billing table in Zapier get updated using the webhook trigger 
+### 1. Google Sign-In
+- **Landing Page**: Users arrive at the landing page.
+- **Sign-In Requirement**: Users must sign in with their Google account to access the application.
 
-3. In the billing section of the app you can see the usage detail with current billing cycle and cumulative usage
+### 2. Dashboard Access
+- **Post Sign-In**: After signing in, users are redirected to the dashboard.
+- **API Calls**: Users can make API calls from the dashboard. Increased API usage updates the billing table in Zapier via webhook triggers.
 
-4. On the dashboard page you can also generate invoice. This uses zapier workflow to send automated invoices through email to the user
+### 3. Billing Section
+- **Usage Details**: Users can view their usage details, current billing cycle, and cumulative usage in the billing section.
 
-5. In the profile page you see your account information and you can also logout of the application. As soon as the user logout of the application the user is redirected to the landing page
+### 4. Invoice Generation
+- **Automated Invoices**: Users can generate invoices from the dashboard. Zapier workflows handle sending automated invoices via email.
 
-6. Routes and protected so that if the user is not signed in then user cannot access the routes in the application
+### 5. Profile Page
+- **Account Information**: Users can view their account information.
+- **Logout**: Users can log out, redirecting them back to the landing page.
 
-7. React context api is used to manage user session across entire application. This makes user management easy.
+### 6. Protected Routes
+- **Access Control**: Routes are protected to ensure only signed-in users can access the application.
 
-Thank you
+### 7. Session Management
+- **React Context API**: Utilized for managing user sessions across the entire application, simplifying user management.
+
+
+
+
 
 
