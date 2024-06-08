@@ -29,9 +29,9 @@ For Zapier there are two workflows (Zaps)
     Then add action Code with Zapier
 This workflow will be triggered when user will generate invoice and the invoice will be sent to the user's email
 
-![image]()
+![image](./1.png)
 
-![image](https://drive.google.com/file/d/1rf8Uxv2XRm1GZoPM-ufhQ5YGZlim7HZ-/view?usp=sharing)
+![image](./2.png)
 
 2. Adding rows in the billing table in Zapier 
 
@@ -39,9 +39,9 @@ This workflow will be triggered when user will generate invoice and the invoice 
     Then copy the webhook URL and paste it in the .env file
     We will use Zapier table action
 
-![image]()
+![image](./3.png)
 
-![image]()
+![image](./4.png)
 
 
 Now that the project setup has completed let's move on to the Application flow
