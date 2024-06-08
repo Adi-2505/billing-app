@@ -1,24 +1,75 @@
 
 # Billing Application
-## Project overview:
-This project uses Zapier to automate the billing and invoicing process
-Users signup and based on the usage of the APIs of the application the user can generate invoices
 
-## Project setup for Backend
-Clone the repository by `git clone`
-Setup the environment variables in the .env file in the root of the project
+## Project Overview
+This project utilizes Zapier to automate the billing and invoicing process. Users can sign up, and based on the usage of the application's APIs, they can generate invoices seamlessly.
 
-`GOOGLE_CLIENT_SECRET`, `GOOGLE_CLIENT_ID`. You can get these two from the google cloud console by seting up new project and generate OAuth Credentials,
+## Backend Setup
 
-Install all the dependencies using `npm install`
+### Prerequisites
+- Node.js installed on your system
+- A Google Cloud account
+- A MongoDB account and cluster setup
+- A Zapier account
 
-This project is using MongoDB as database so you will have to create a mongo cluster and copy the mongo connection URL to the .env file name it as `MONGO_URL`
+### Steps
 
-Go to Zapier.com and create a new account if you don't have one.
+1. **Clone the Repository**
+   ```bash
+   git clone <repository_url>
+   cd <repository_directory>
+   ```
 
-## Project setup for frontend
+2. **Setup Environment Variables**
+   - Create a `.env` file in the root directory of the project.
+   - Add the following environment variables:
 
-install all the dependencies using `npm install`. Then you are good to go.
+     ```plaintext
+     GOOGLE_CLIENT_ID=<your_google_client_id>
+     GOOGLE_CLIENT_SECRET=<your_google_client_secret>
+     MONGO_URL=<your_mongo_connection_url>
+     ```
+
+   - To get `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`, create a new project on the Google Cloud Console, navigate to the OAuth Credentials section, and generate the credentials.
+
+3. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Setup MongoDB**
+   - Create a MongoDB cluster on MongoDB Atlas.
+   - Copy the connection URL and add it to your `.env` file as `MONGO_URL`.
+
+5. **Zapier Integration**
+   - Go to [Zapier.com](https://zapier.com) and create a new account if you don't have one.
+   - Follow the instructions on Zapier to integrate it with your application.
+
+### Running the Backend
+To start the backend server, use the following command:
+```bash
+npm start
+```
+
+## Frontend Setup
+
+### Prerequisites
+- Node.js installed on your system
+
+### Steps
+
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Running the Frontend**
+   ```bash
+   npm start
+   ```
+
+## Conclusion
+By following these steps, you will have a professional and functional billing application. Ensure all environment variables are correctly set up and that both your backend and frontend servers are running smoothly. Enjoy automating your billing and invoicing process with Zapier integration!
 
 ## Zapier setup fpr the backend
 For Zapier there are two workflows (Zaps)
