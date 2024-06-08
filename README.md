@@ -31,6 +31,7 @@ This workflow will be triggered when user will generate invoice and the invoice 
 
 ![image](./1.png)
 
+
 ![image](./2.png)
 
 2. Adding rows in the billing table in Zapier 
