@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../Providers/AuthProvider";
 
+import {Button} from "@/conponents/ui/button.jsx"
+
 const About = () => {
   const { loading, isAuthenticated, user } = useAuth();
   const navigate = useNavigate();
@@ -40,8 +42,8 @@ const About = () => {
       <div>
         <div>{user.displayName}</div>
         <div>{user.emails[0].value}</div>
-        <button onClick={logout}>Logout</button>
-        <button onClick={generateInvoice}>Generate invoice</button>
+        <Button onClick={logout}>Logout</Button>
+        <Button onClick={generateInvoice}>Generate invoice</Button>
       </div>
     );
   }
